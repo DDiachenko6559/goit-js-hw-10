@@ -1,0 +1,19 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  flex-shrink: 0;
+  object-fit: cover;
+  transition: transform 250ms ease-in-out;
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+  transform: scale(1.04);
+}
