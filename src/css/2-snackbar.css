@@ -1,106 +1,89 @@
-.feedback-form {
+.container {
+  max-width: 390px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.form label {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  border-radius: 8px;
-  background: #fff;
-  padding: 24px;
-  margin: 0 auto;
-  width: 408px;
-  height: 256px;
 }
 
-.feedback-form label {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  color: #2e2f42;
-
-  font-family: Avenir;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-}
-
-.feedback-form input {
-  display: flex;
+.form label input {
   width: 360px;
   height: 40px;
   flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
   border-radius: 4px;
   border: 1px solid #808080;
   padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  box-sizing: border-box;
 }
 
-.feedback-form textarea {
-  width: 360px;
-  height: 80px;
-  resize: none;
-  flex-shrink: 0;
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  background-color: inherit;
-  border-radius: 4px;
-  border: 1px solid #808080;
-  margin: 0;
-  padding: 8px 16px;
-  color: #2e2f42;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.feedback-form input:hover,
-.feedback-form input:focus,
-.feedback-form textarea:hover,
-.feedback-form textarea:focus {
+.form label input:hover,
+.form label input:focus {
   border: 1px solid #000;
 }
 
-.feedback-form input:active,
-.feedback-form textarea:active {
-  border: 1px solid #808080;
+.form label input:active {
+  border: 1px solid #4e75ff;
 }
 
-.feedback-form button {
+.form fieldset {
+  width: 360px;
+  height: 78px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 14px 48px 12px 28px;
   display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.form fieldset label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.form fieldset input {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+.form fieldset input:first-child {
+  margin-left: 20px;
+}
+
+.form button {
+  display: flex;
+  width: 360px;
   padding: 8px 16px;
   justify-content: center;
   align-items: center;
-  border: none;
+  gap: 10px;
   border-radius: 8px;
   background: #4e75ff;
+  border: none;
   color: #fff;
-  cursor: pointer;
-
-  font-family: Avenir;
-  font-size: 16px;
-  font-style: normal;
+  font-family: sans-serif;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04;
-
-  margin-top: 8px;
+  letter-spacing: 0.64px;
 }
 
-.feedback-form button:hover,
-.feedback-form button:focus {
+.form button:hover {
   background: #6c8cff;
 }
